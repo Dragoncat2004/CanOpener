@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01696d66cbd378247b109519c54b6202, type: 3}
+  m_Script: {fileID: 11500000, guid: 04f110b67785a5b42a57b7b2b712a8ba, type: 3}
   m_Name: BuyChuru
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: "\uCE04\uB974 \uC0AC\uAE30"
-  description: "\uCE04\uB974 2\uC7A5\uC744 \uBC84\uB9B0 \uCE74\uB4DC \uB354\uBBF8\uC5D0
-    \uCD94\uAC00\uD55C\uB2E4."
+  cardName: "\uCE04\uB974 \uAD6C\uB9E4"
+  description: "\uCE04\uB974\uB97C 2\uAC1C \uC0DD\uC131\uD55C\uB2E4."
   cardArt: {fileID: 0}
-  energyCost: 1
+  energyCost: 2
   satisfactionValue: 0
   type: 0

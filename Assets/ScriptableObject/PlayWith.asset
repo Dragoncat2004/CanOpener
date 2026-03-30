@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01696d66cbd378247b109519c54b6202, type: 3}
+  m_Script: {fileID: 11500000, guid: 04f110b67785a5b42a57b7b2b712a8ba, type: 3}
   m_Name: PlayWith
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   cardName: "\uB180\uC544\uC8FC\uAE30"
-  description: 
+  description: "\uB9CC\uC871\uB3C4 9"
   cardArt: {fileID: 0}
   energyCost: 2
-  satisfactionValue: 10
+  satisfactionValue: 9
   type: 0
