@@ -13,9 +13,10 @@ public class CardDisplay : MonoBehaviour
     public TextMeshProUGUI costText;
     public Image cardImage;
 
-    void Start()
+    public void Setup(CardData newData)
     {
-        
+        cardData = newData;
+        UpdateUI();
     }
 
     // Update is called once per frame
@@ -29,9 +30,15 @@ public class CardDisplay : MonoBehaviour
 
     void UpdateUI()
     {
-        nameText.text = cardData.name;
-        descriptionText.text = cardData.description;
-        costText.text = cardData.energyCost.ToString();
-        cardImage.sprite = cardData.cardArt;
+        if (cardData == null) return;
+
+        if (nameText != null) nameText.text = cardData.cardName;
+        if (descriptionText != null) descriptionText.text = cardData.description;
+        if (costText != null) costText.text = cardData.energyCost.ToString();
+
+        if (cardImage != null && cardData.cardArt != null)
+        {
+            cardImage.sprite = cardData.cardArt;
+        }
     }
 }
