@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour
@@ -41,4 +42,6 @@ public class CardDisplay : MonoBehaviour
             cardImage.sprite = cardData.cardArt;
         }
     }
+
+    
 }

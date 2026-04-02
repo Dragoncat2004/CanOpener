@@ -32,9 +32,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7221113799423786412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -65, y: 110}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1248030538688735310
@@ -361,6 +361,8 @@ GameObject:
   - component: {fileID: 6936507355435947284}
   - component: {fileID: 1632530784589138812}
   - component: {fileID: 2850368080274712378}
+  - component: {fileID: 8628196750253721447}
+  - component: {fileID: 4684774869201882069}
   m_Layer: 5
   m_Name: CardBase
   m_TagString: Untagged
@@ -446,6 +448,31 @@ MonoBehaviour:
   descriptionText: {fileID: 62744724157248854}
   costText: {fileID: 5808371066656301767}
   cardImage: {fileID: 2486927121611401248}
+--- !u!225 &8628196750253721447
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571657321509528648}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &4684774869201882069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571657321509528648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87ec52ae1c4372439536c9b783cf4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableCard
+  myCardData: {fileID: 0}
 --- !u!1 &6283794501026435782
 GameObject:
   m_ObjectHideFlags: 0
