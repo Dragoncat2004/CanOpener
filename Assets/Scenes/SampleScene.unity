@@ -598,6 +598,8 @@ GameObject:
   - component: {fileID: 500830227}
   - component: {fileID: 500830230}
   - component: {fileID: 500830231}
+  - component: {fileID: 500830233}
+  - component: {fileID: 500830232}
   m_Layer: 5
   m_Name: DeckSlotPanel
   m_TagString: Untagged
@@ -619,10 +621,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1459779367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 570, y: 0}
-  m_SizeDelta: {x: -635.1411, y: 0}
+  m_AnchoredPosition: {x: -320, y: 0}
+  m_SizeDelta: {x: 640, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500830227
 MonoBehaviour:
@@ -723,7 +725,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 117b244ae31ec7c469cc64aae7b4b8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeckDropZone
-  cardPrefab: {fileID: 0}
+  cardPrefab: {fileID: 4571657321509528648, guid: b3b8ea76d0bc64d43b0355618430797c, type: 3}
+--- !u!114 &500830232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500830225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &500830233
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500830225}
+  m_CullTransparentMesh: 1
 --- !u!1 &648202879
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,10 +975,10 @@ RectTransform:
   - {fileID: 1178522789}
   m_Father: {fileID: 1284854895}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 400}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013782720
 MonoBehaviour:
@@ -955,7 +995,7 @@ MonoBehaviour:
   m_Content: {fileID: 1698682477}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -1347,8 +1387,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: -640, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1284854896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,9 +1686,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 400}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1827,6 +1867,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6fd66b6eb1c4ea746a1f451435f1feca, type: 2}
   - {fileID: 11400000, guid: 4ce75cc9ffcc17249964e381251d0012, type: 2}
   - {fileID: 11400000, guid: 49defc468815fa04086ac56cae7947bb, type: 2}
+  - {fileID: 11400000, guid: 7f56bcd29026d094792cc90e16f60efa, type: 2}
+  - {fileID: 11400000, guid: 308c132233783ef4c8291c5471a28cbd, type: 2}
   cardPrefab: {fileID: 4571657321509528648, guid: b3b8ea76d0bc64d43b0355618430797c, type: 3}
   contentParent: {fileID: 1698682477}
 --- !u!1 &1698682476
@@ -1840,6 +1882,7 @@ GameObject:
   - component: {fileID: 1698682477}
   - component: {fileID: 1698682479}
   - component: {fileID: 1698682478}
+  - component: {fileID: 1698682480}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1861,7 +1904,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 648202880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -1879,7 +1922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 0
-  m_VerticalFit: 2
+  m_VerticalFit: 0
 --- !u!114 &1698682479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1893,17 +1936,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 190
+    m_Right: 190
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 150, y: 240}
-  m_Spacing: {x: 30, y: 30}
+  m_CellSize: {x: 198.032, y: 316.8512}
+  m_Spacing: {x: 133.21, y: 133.21}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1698682480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698682476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88556ef5612d6948b1d5f8b83465f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectionalPanelGridLayout
+  columns: 5
+  cardRatio: 1.6
+  spacingPercent: 0.07
+  paddingPercent: 0.1
+  viewportRect: {fileID: 648202880}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
